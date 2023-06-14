@@ -1,6 +1,12 @@
 @use 'sass:math';
 @import url(slider.css);
+
 //обнуление
+html,
+body {
+
+    overflow-x: hidden;
+}
 
 ul,
 ol,
@@ -26,6 +32,7 @@ h6 {
 
 //конструкция для перевода пикселей в rem
 $fz: 16px;
+
 @function rem($size) {
     $remSize: $size / $fz;
     @return $remSize * 1rem;
@@ -53,7 +60,7 @@ header {
     top: 0;
     z-index: 1000;
     padding: 0px 45px 0px 48px;
-    background-color: #fff;
+    background-color: #555D61;
 }
 
 .top-header {
@@ -84,7 +91,7 @@ header {
 .contact-header {
     &__phone {
         font-weight: 800;
-        color: $colorMain;
+        color: $colorWhite;
         text-decoration: none;
     }
 
@@ -92,6 +99,7 @@ header {
         height: 100%;
         padding: 10px 40px;
         font-size: rem(16px);
+        font-weight: 800;
         letter-spacing: rem(2px);
         color: $colorWhite;
         background-color: $colorOrange;
@@ -117,8 +125,8 @@ header {
         text-align: center;
         color: $colorOrange;
         text-decoration: none;
-        text-shadow: 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px, 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,
-        0 0 1px, 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px, 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px;
+        text-shadow: 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px,
+            0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px;
     }
 
     &__bottom {
@@ -151,7 +159,7 @@ header {
     }
 
     &__link {
-        color:$colorMain;
+        color: $colorMain;
         text-decoration: none;
     }
 }
@@ -167,7 +175,8 @@ header {
 .dropdown__btn {
     padding: 16px;
     font-size: 16px;
-    color:$colorMain;
+    font-weight: 800;
+    color: $colorWhite;
     border: none;
     text-decoration: none;
 }
@@ -184,21 +193,24 @@ header {
     margin-top: 13px;
     font-size: 14px;
     background-color: #f1f1f1;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown__content a {
     display: block;
     padding: 15px 16px;
-    color:$colorMain;
+    color: $colorMain;
     text-decoration: none;
 }
 
-.dropdown__content a:hover {background-color: #ddd;}
+.dropdown__content a:hover {
+    background-color: #ddd;
+}
 
 .dropdown__wrapper:hover .dropdown__content {
     display: block;
 }
+
 //конец выпадающего меню в хедере
 
 .search-header {
@@ -222,10 +234,12 @@ header {
 
 .catalog-header {
     min-width: 23%;
+
     &__btn {
         width: 100%;
         padding: 10px 40px;
         font-size: rem(16px);
+        font-weight: 800;
         letter-spacing: rem(2px);
         color: $colorWhite;
         background-color: $colorOrange;
@@ -263,12 +277,13 @@ header {
     }
 
     &__link {
-        color:$colorMain;
+        color: $colorMain;
         text-decoration: none;
     }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+
     .dropdown__btn,
     .dropdown,
     .dropdown__content {
@@ -278,37 +293,40 @@ header {
     .body-header__container {
         padding: 0;
     }
-    .contact-header__button,
+
     .catalog-header__btn,
     .menu__body,
     .search-header {
         display: none;
     }
+
     .top-header {
-            border-bottom: none;
+        border-bottom: none;
 
         &__container {
-            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
         }
-        
+
         &__logo {
-            margin: rem(10px) rem(20px) 0px 0px;
+            margin: rem(23px) rem(20px) 0px rem(10px);
             padding: 0px 0px rem(5px) rem(20px);
+        }
+
+        &__contact {
+            font-size: rem(12px);
+            white-space: nowrap;
+        }
     }
-    &__contact {
-        font-size: rem(12px);
-        white-space: nowrap;
-    }
-    }
-    
+
     .logo {
         &__top {
             margin: 0px;
             font-size: rem(20px);
             letter-spacing: rem(2px);
             white-space: nowrap;
-            text-shadow: 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px, 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,
-            0 0 1px, 0 0 1px,0 0 1px,0 0 1px;
+            text-shadow: 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px,
+                0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px;
         }
 
         &__bottom {
@@ -317,127 +335,135 @@ header {
         }
     }
 
-//гамбургер меню
-//скрываем чекбокс
-#menu__toggle {
-    opacity: 0;
-}
-
-// стилизуем кнопку   
-.menu__btn { 
-    position: fixed;
-    top: 10px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 3;
-    display: flex; 
-    align-items: center; 
-}
-
-// добавляем "гамбургер"
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: $colorMain;
-}
-.menu__btn > span::before {
-    content: '';
-    top: -8px;
-}
-.menu__btn > span::after {
-    content: '';
-    top: 8px;
-}
-
-//контейнер меню
-.menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: $colorWhite;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-}
-
-//элементы меню 
-.menu__item-mob {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 47px;
-    padding: 12px 24px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: $colorCatalog;
-    text-decoration: none;
-    border: solid #dfdfdf;
-    border-width: 1px 0 1px 0;
-}
-
-.menu__item-mob:hover {
-    background-color: #CFD8DC;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-}
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-    transition-duration: .25s;
-}
-.menu__box {
-    transition-duration: .25s;
-}
-.menu__item-mob {
-    transition-duration: .25s;
-}
-
-//конец гамбурер-меню
-.search-header-mob {
-    max-width: 100%;
-    padding: 10px 25px 10px 10px;
-    border: solid #dfdfdf;
-    border-width: 1px 0 1px 0;
-
-    &__inpt {
-        width: 95%;
-        height: 37px;
-        padding: 9px 16px;
-        font-size: 14px;
-        background: #f4f3f3;
-        border-radius: 4px;
-        border: none;
+    //гамбургер меню
+    //скрываем чекбокс
+    #menu__toggle {
+        opacity: 0;
     }
-}
+
+    // стилизуем кнопку   
+    .menu__btn {
+        position: fixed;
+        top: 10px;
+        left: 15px;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    // добавляем "гамбургер"
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $colorMain;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    //контейнер меню
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: $colorWhite;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+
+    //элементы меню 
+    .menu__item-mob {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 47px;
+        padding: 12px 24px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: $colorCatalog;
+        text-decoration: none;
+        border: solid #dfdfdf;
+        border-width: 1px 0 1px 0;
+    }
+
+    .menu__item-mob:hover {
+        background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        transition-duration: .25s;
+    }
+
+    .menu__box {
+        transition-duration: .25s;
+    }
+
+    .menu__item-mob {
+        transition-duration: .25s;
+    }
+
+    //конец гамбурер-меню
+
+    .search-header-mob {
+        max-width: 100%;
+        padding: 10px 25px 10px 10px;
+        border: solid #dfdfdf;
+        border-width: 1px 0 1px 0;
+
+        &__inpt {
+            width: 95%;
+            height: 37px;
+            padding: 9px 16px;
+            font-size: 14px;
+            background: #f4f3f3;
+            border-radius: 4px;
+            border: none;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -445,17 +471,18 @@ header {
         display: none;
     }
 }
+
 // конец мобильной версии хедера
 // конец хедера
 
 
 //ОСНОВНОЙ БЛОК
 .main {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
 
     &__sidebar {
         width: 23%;
@@ -464,7 +491,7 @@ header {
     &__body {
         width: 77%;
         padding: 0px 0px 0px 0px;
-        
+
     }
 
     &__catalog {
@@ -479,7 +506,7 @@ header {
 .main__catalog-wrapper {
     margin: 0px 0px 20px 50px;
     padding: 10px 0px 0px 30px;
-	background-color: $colorWhite;	
+    background-color: $colorWhite;
 }
 
 .main__catalog-wrapper h2 {
@@ -487,13 +514,13 @@ header {
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
-    color: $colorMain;	
+    color: $colorMain;
 }
 
 .main__about-wrapper {
     margin: 0px 0px 20px 50px;
     padding: 10px 0px 0px 30px;
-	background-color: $colorWhite;	
+    background-color: $colorWhite;
 }
 
 .main__about-wrapper h2 {
@@ -501,7 +528,7 @@ header {
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
-    color: $colorMain;	
+    color: $colorMain;
 }
 
 .about__container {
@@ -515,11 +542,12 @@ header {
 .about__item {
     &-text {
         margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;  
-    }
-        width: 50%;
-        margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
+    }
+
+    width: 50%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 .about-item {
@@ -536,6 +564,7 @@ header {
             width: 60%;
             padding-top: 4%;
         }
+
         &_fjd {
             width: 50%;
             padding-top: 6%;
@@ -544,7 +573,7 @@ header {
     }
 
     &__container-img {
-        max-width: 100%;  
+        max-width: 100%;
         max-height: 100%;
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
@@ -556,14 +585,14 @@ header {
 .main__company-wrapper {
     margin: 0px 0px 20px 50px;
     padding: 10px 0px 30px 30px;
-	background-color: $colorWhite;	
+    background-color: $colorWhite;
 }
 
 .main__company-wrapper h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
-    color: $colorMain;	
+    color: $colorMain;
 }
 
 .company-wrapper__item {
@@ -575,7 +604,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     line-height: 33px;
-    color: $colorMain;	
+    color: $colorMain;
 }
 
 .company-wrapper__container {
@@ -588,27 +617,27 @@ header {
     display: flex;
     margin-top: 30px;
     gap: 80px;
-    
+
 }
 
 .list {
     &__item {
-            position: relative;
-            display: flex;
-            align-items: center;
-            height: 47px;
-            padding: 12px 24px;
-            gap: 20px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            color: $colorCatalog;
-            background-color: $colorWhite;
-            text-decoration: none;
-            border: solid #dfdfdf;
-            border-width: 0.5px;
-        }
-        
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        padding: 12px 24px;
+        gap: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12.5px;
+        font-weight: 400;
+        color: $colorCatalog;
+        background-color: $colorWhite;
+        line-height: 16px;
+        text-decoration: none;
+        border: 1px solid #dfdfdf;
+    }
+
     &__item:hover {
         background-color: #dfdfdf;
     }
@@ -622,7 +651,7 @@ header {
     }
 
     &__container-img {
-        width: 100%;  
+        width: 100%;
         height: 100%;
         margin: 0px 0px 0px 0px;
         object-fit: cover;
@@ -641,16 +670,16 @@ header {
 @media (min-width: 320px) and (max-width: 992px) {
     .sidebar {
         display: none;
-        } 
+    }
 
     .main__body {
         width: 95%;
         padding: 0px 0px 0px 0px;
-            
-        }
-    }
 
-    .banner-item {
+    }
+}
+
+.banner-item {
     &__container {
         margin: 30px 0px 30px 0px;
         padding-left: 18px;
@@ -669,14 +698,14 @@ header {
         margin-left: 18px;
         padding-left: 15px;
     }
-    
+
     .main__company-wrapper {
         margin-left: 18px;
     }
-    
+
     .sidebar {
         display: none;
-        } 
+    }
 
     .list {
         &__item {
@@ -685,26 +714,18 @@ header {
     }
 
     .about-item {
-        &__container, 
+
+        &__container,
         &__container_naer,
         &__container_teejet,
-        &__container_fjd  {
+        &__container_fjd {
             width: 100%;
             height: auto;
-
-            &_fjd {
-                padding-left: 18%;
-            }
         }
-}
+    }
 }
 
 @media (min-width: 320px) and (max-width: 992px) {
-    .about__container {
-        display: flex;
-        flex-direction: column;
-        padding-right: 10px;
-    }
 
     .company-wrapper {
         flex-direction: column;
@@ -732,37 +753,38 @@ header {
 
 .sidebar {
     &__catalog {
-    margin: 30px 0px;
+        margin: 30px 0px;
     }
 }
+
 // конец мобильной версии основного блока 
 //конец основного блока
 
 
 //ФУТЕР
 .footer {
-        margin-top: rem(30px);
-        padding: rem(40px) rem(20px) rem(40px) rem(48px);
-        color: $colorWhite;
-        background-color: $colorCatalog;
-    
-        &__container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0px auto;
-            gap: 10px;
-    
-        }
-    
+    margin-top: rem(30px);
+    padding: rem(40px) rem(20px) rem(40px) rem(48px);
+    color: $colorWhite;
+    background-color: $colorCatalog;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0px auto;
+        gap: 10px;
+
+    }
+
     &__side {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
     }
-    
+
     &__logo-item {
         margin: 0px;
         font-size: rem(40px);
@@ -771,165 +793,170 @@ header {
         font-weight: 900;
         color: $colorOrange;
         text-decoration: none;
-        text-shadow: 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px, 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px, 0 0 1px,
-        0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px, 0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px,0 0 1px;
-    }
-    
-        &__logo {
-            display: flex;
-            align-items: center;
-            margin-bottom: 35px;
-            white-space: nowrap;
-        }
-    
-        &__social-title {
-            display: block;
-            margin-bottom: 14px;
-            font-size: 14px;
-            line-height: 19px;
-        }
-        &__info-big {
-            display: block;
-            margin-bottom: 3px;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-            color: $colorWhite;
-            text-decoration: none;
-        }
-        &__info-small {
-            display: block;
-            margin-bottom: 12px;
-            font-size: 12px;
-            line-height: 16px;
-            color: $colorGreyText;
-        }
-    
-        &__main {
-            width: 73%;
-            margin: 30px;
-        }
-    
-        
-        &__main-container {
-            display: flex;
-            justify-content: space-between;
-        }
-    
-        &__nav {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        &__nav-catalog {
-            width: 50%;
-        }
-    
-        &__nav-title {
-            margin-bottom: 21px;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 22px;
-        }
-    
-        &__nav-main {
-            display: flex;
-        }
-    
-        &__nav-box {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-right: 25px
-        }
-    
-        &__nav-item {
-            margin-bottom: 12px;
-            font-size: 14px;
-            line-height: 19px;
-            font-weight: normal;
-            color: $colorWhite;
-            text-decoration: none;
-        }
-    
-@media (min-width: 320px) and (max-width: 992px) {
-        &__container {
-            flex-direction: column;
-            justify-content: space-between;
-            max-width: 900px;
-            padding-left: 20px;
-        } 
-    
-        &__logo {
-            display: flex;
-        }
-            
-        &__main {
-            width: 100%; 
-        }
-            
-        &__side {
-            width: 100%;
-        }
-}
-    
-        @media (min-width: 320px) and (max-width: 767px) {
-            &__main-container {
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-        }
-    }
-    
-    @media (min-width: 1200px) and (max-width: 1400px) {
-    .footer__side {
-        width: 27%;
-    }
+        text-shadow: 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px,
+            0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px;
     }
 
-    //страница контактов
-    .main-cat {
-        margin-top: 30px;
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        white-space: nowrap;
     }
 
-    .contacts__social-title {
+    &__social-title {
         display: block;
         margin-bottom: 14px;
         font-size: 14px;
         line-height: 19px;
     }
-    .contacts__info-big {
+
+    &__info-big {
         display: block;
         margin-bottom: 3px;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 16px;
         line-height: 22px;
-        color: $colorMain;
+        color: $colorWhite;
         text-decoration: none;
     }
 
-    .contacts__info-small {
+    &__info-small {
         display: block;
         margin-bottom: 12px;
         font-size: 12px;
         line-height: 16px;
         color: $colorGreyText;
+    }
+
+    &__main {
+        width: 73%;
+        margin: 30px;
+    }
+
+
+    &__main-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__nav-catalog {
+        width: 50%;
+    }
+
+    &__nav-title {
+        margin-bottom: 21px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__nav-main {
+        display: flex;
+    }
+
+    &__nav-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 25px
+    }
+
+    &__nav-item {
+        margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: normal;
+        color: $colorWhite;
         text-decoration: none;
     }
 
-    .contacts {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        &__map {
-            margin: 0px 35px 0px 0px;
-            padding: 0px 0px 30px 0px;
-            overflow: hidden;
+    @media (min-width: 320px) and (max-width: 992px) {
+        &__container {
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 900px;
+            padding-left: 20px;
         }
-        &__map-head {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 33px;
-            color: $colorMain;
+
+        &__logo {
+            display: flex;
+        }
+
+        &__main {
+            width: 100%;
+        }
+
+        &__side {
+            width: 100%;
         }
     }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        &__main-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .footer__side {
+        width: 27%;
+    }
+}
+
+//страница контактов
+.main-cat {
+    margin-top: 30px;
+}
+
+.contacts__social-title {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.contacts__info-big {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorMain;
+    text-decoration: none;
+}
+
+.contacts__info-small {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: $colorGreyText;
+    text-decoration: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__map {
+        margin: 0px 35px 0px 0px;
+        padding: 0px 0px 30px 0px;
+        overflow: hidden;
+    }
+
+    &__map-head {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 33px;
+        color: $colorMain;
+    }
+}

@@ -1,5 +1,10 @@
 @import url(slider.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html,
+body {
+  overflow-x: hidden;
+}
+
 ul,
 ol,
 li {
@@ -27,12 +32,11 @@ body {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
   padding: 0px 45px 0px 48px;
-  background-color: #fff;
+  background-color: #555D61;
 }
 
 .top-header {
@@ -59,13 +63,14 @@ header {
 
 .contact-header__phone {
   font-weight: 800;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .contact-header__button {
   height: 100%;
   padding: 10px 40px;
   font-size: 1rem;
+  font-weight: 800;
   letter-spacing: 0.125rem;
   color: #fff;
   background-color: #f76500;
@@ -130,7 +135,8 @@ header {
 .dropdown__btn {
   padding: 16px;
   font-size: 16px;
-  color: #000;
+  font-weight: 800;
+  color: #fff;
   border: none;
   text-decoration: none;
 }
@@ -189,6 +195,7 @@ header {
   width: 100%;
   padding: 10px 40px;
   font-size: 1rem;
+  font-weight: 800;
   letter-spacing: 0.125rem;
   color: #fff;
   background-color: #f76500;
@@ -221,27 +228,27 @@ header {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .dropdown__btn,
-.dropdown,
-.dropdown__content {
+  .dropdown,
+  .dropdown__content {
     display: none;
   }
   .body-header__container {
     padding: 0;
   }
-  .contact-header__button,
-.catalog-header__btn,
-.menu__body,
-.search-header {
+  .catalog-header__btn,
+  .menu__body,
+  .search-header {
     display: none;
   }
   .top-header {
     border-bottom: none;
   }
   .top-header__container {
-    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
   }
   .top-header__logo {
-    margin: 0.625rem 1.25rem 0px 0px;
+    margin: 1.4375rem 1.25rem 0px 0.625rem;
     padding: 0px 0px 0.3125rem 1.25rem;
   }
   .top-header__contact {
@@ -265,17 +272,17 @@ header {
   .menu__btn {
     position: fixed;
     top: 10px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
+    left: 15px;
+    width: 40px;
+    height: 25px;
     cursor: pointer;
     z-index: 3;
     display: flex;
     align-items: center;
   }
   .menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -339,8 +346,8 @@ header {
     left: 0;
   }
   .menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
+  .menu__btn > span::before,
+  .menu__btn > span::after {
     transition-duration: 0.25s;
   }
   .menu__box {
@@ -506,17 +513,17 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  height: 47px;
+  height: 30px;
   padding: 12px 24px;
   gap: 20px;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12.5px;
   font-weight: 400;
   color: #333;
   background-color: #fff;
+  line-height: 16px;
   text-decoration: none;
-  border: solid #dfdfdf;
-  border-width: 0.5px;
+  border: 1px solid #dfdfdf;
 }
 .list__item:hover {
   background-color: #dfdfdf;
@@ -575,16 +582,8 @@ header {
     width: 100%;
     height: auto;
   }
-  .about-item__container_fjd, .about-item__container_naer_fjd, .about-item__container_teejet_fjd, .about-item__container_fjd_fjd {
-    padding-left: 18%;
-  }
 }
 @media (min-width: 320px) and (max-width: 992px) {
-  .about__container {
-    display: flex;
-    flex-direction: column;
-    padding-right: 10px;
-  }
   .company-wrapper {
     flex-direction: column;
     gap: 24px;

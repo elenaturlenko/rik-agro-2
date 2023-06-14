@@ -60,13 +60,14 @@
 }
 
 .slider .slick-arrow.slick-prev {
-  left: 88%;
+  left: 91%;
   background: url("../image/icon/arrow_prev.png") 0 0/100% no-repeat;
 }
 
 @media (max-width: 767px) {
   .wrapper-slider {
     margin-left: 18px;
+    padding-right: 15px;
   }
   .slider {
     padding: 0px 0px;
