@@ -40,7 +40,7 @@ header {
 }
 
 .top-header {
-  border-bottom: 2px solid #f6f6f6;
+  border-bottom: 4px solid #f6f6f6;
 }
 .top-header__container {
   display: flex;
@@ -322,7 +322,7 @@ header {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #333;
+    color: #555D61;
     text-decoration: none;
     border: solid #dfdfdf;
     border-width: 1px 0 1px 0;
@@ -519,7 +519,7 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 12.5px;
   font-weight: 400;
-  color: #333;
+  color: #555D61;
   background-color: #fff;
   line-height: 16px;
   text-decoration: none;
@@ -610,7 +610,7 @@ header {
   margin-top: 1.875rem;
   padding: 2.5rem 1.25rem 2.5rem 3rem;
   color: #fff;
-  background-color: #333;
+  background-color: #555D61;
 }
 .footer__container {
   display: flex;

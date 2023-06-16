@@ -42,7 +42,7 @@ $fz: 16px;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $colorMain: #000;
-$colorCatalog: #333;
+$colorCatalog: #555D61;
 $colorOrange: #f76500;
 $colorWhite: #fff;
 $colorGreyText: #858585;
@@ -60,11 +60,11 @@ header {
     top: 0;
     z-index: 1000;
     padding: 0px 45px 0px 48px;
-    background-color: #555D61;
+    background-color: $colorCatalog;
 }
 
 .top-header {
-    border-bottom: 2px solid #f6f6f6;
+    border-bottom: 4px solid #f6f6f6;
 
     &__container {
         display: flex;
@@ -341,7 +341,7 @@ header {
         opacity: 0;
     }
 
-    // стилизуем кнопку   
+    // стилизуем кнопку
     .menu__btn {
         position: fixed;
         top: 10px;
@@ -393,7 +393,7 @@ header {
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
 
-    //элементы меню 
+    //элементы меню
     .menu__item-mob {
         position: relative;
         display: flex;
@@ -658,7 +658,7 @@ header {
     }
 }
 
-//мобильная версия основного блока 
+//мобильная версия основного блока
 @media (min-width: 993px) and (max-width: 1268px) {
     .main {
         &__container {
@@ -757,7 +757,7 @@ header {
     }
 }
 
-// конец мобильной версии основного блока 
+// конец мобильной версии основного блока
 //конец основного блока
 
 
