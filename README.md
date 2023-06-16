@@ -1,6 +1,8 @@
 # Website for an agricultural machinery dealer company
 ## Responsive website for a dealer company
-![Фото демонстрации сайта](./assets/image/gif/demonstration.mp4)
+
+![Гифка демонстрации сайта](assets/image/gif/demonstration.gif)
+
 ## Getting started
 
 Host the parent directory on the webserver
@@ -15,3 +17,6 @@ Host the parent directory on the webserver
 
 ## Result:
 
+
+
+[def]: ./assets/image/gif/demonstration.mp4
