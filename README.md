@@ -1,7 +1,7 @@
 # Website for an agricultural machinery dealer company
 ## Responsive website for a dealer company
 
-![Гифка демонстрации сайта](assets/image/gif/demonstration.gif)
+![Гифка демонстрации сайта](./assets/image/gif/demonstration.gif)
 
 ## Getting started
 
@@ -18,4 +18,4 @@ Host the parent directory on the webserver
 
 https://www.rik-agro.ru/
 
-[def]: ./assets/image/gif/demonstration.mp4
+
