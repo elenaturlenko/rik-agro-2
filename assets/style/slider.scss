@@ -76,7 +76,7 @@ $colorGreyText: #858585;
 }
 
 .slider .slick-arrow.slick-prev {
-  left: 91%;
+  left: 90%;
   background: url('../image/icon/arrow_prev.png') 0 0 /100% no-repeat;
 }
 
@@ -90,6 +90,10 @@ $colorGreyText: #858585;
   .slider {
     padding: 0px 0px;
   }
+}
+
+.slider .slick-arrow.slick-prev {
+  padding-right: 10px;
 }
 
 .slider__item {

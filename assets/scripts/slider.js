@@ -12,13 +12,16 @@ $(document).ready(function(){
 					slidesToScroll: 2
 				}
 			},
-			
+
 			{
 				breakpoint: 767,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					
+          arrows : false,
+          autoplay: true,
+          autoplaySpeed: 2500,
+
 				}
 			}
 		]
