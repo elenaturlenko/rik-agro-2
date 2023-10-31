@@ -386,7 +386,6 @@ header {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 80px 0;
     list-style: none;
     text-align: center;
     background-color: $colorWhite;
@@ -646,7 +645,6 @@ header {
 // конец правая сторона основного блока
 
 // Навбар новый
-
 .catalog {
   margin: 30px 0;
   border: 1px solid #dfdfdf;
@@ -727,60 +725,8 @@ header {
 }
 
 // конец дропдаун в навбаре
+
 //конец навбар новый
-
-// НАВБАР
-
-// .list {
-//   &__container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     gap: 20px;
-//     min-height: 30px;
-//     padding: 5px 24px;
-//     background-color: $colorWhite;
-//     line-height: 16px;
-//     border: 1px solid #dfdfdf;
-//   }
-
-//   &__item {
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 12.5px;
-//     font-weight: 400;
-//     color: $colorCatalog;
-//     text-decoration: none;
-//   }
-
-//   &__container:hover {
-//     background-color: #dfdfdf;
-//   }
-
-// }
-
-// .list__dropdown-ul {
-
-//   display: none;
-//   width: 100%;
-//   background-color: $colorWhite;
-// }
-
-// .list__dropdown-li {
-//   font-family: 'Roboto', sans-serif;
-//   font-size: 12.5px;
-//   font-weight: 400;
-//   color: $colorCatalog;
-//   text-decoration: none;
-// }
-
-// .list__container:hover .list__dropdown-ul {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// конец НАВБАР
-
-
 
 //мобильная версия основного блока
 @media (min-width: 993px) and (max-width: 1268px) {
@@ -874,13 +820,6 @@ header {
     flex-direction: row;
   }
 }
-
-// .sidebar {
-//   &__catalog {
-//     margin: 30px 0px;
-//     padding: 0;
-//   }
-// }
 
 // конец мобильной версии основного блока
 //конец основного блока

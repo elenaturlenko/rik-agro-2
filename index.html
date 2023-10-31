@@ -52,13 +52,10 @@
           </div>
           <div class="header__dropdown dropdown">
             <div class="dropdown__wrapper">
-              <a href="./factory.html" class="dropdown__btn"
-                >&#10217; О компании</a
-              >
-              <div class="dropdown__content">
-                <a href="./factory.html">О компании</a>
-                <a href="./factory.html">Вакансии</a>
-              </div>
+              <a href="./factory.html" class="dropdown__btn">О компании</a>
+            </div>
+            <div class="dropdown__wrapper">
+              <a href="./factory.html" class="dropdown__btn">Вакансии</a>
             </div>
             <div class="dropdown__wrapper">
               <a href="./factory.html" class="dropdown__btn">Новости</a>
@@ -77,153 +74,109 @@
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
-        <ul class="menu__box">
-          <li>
-            <div class="search-header-mob">
-              <form class="search-header-mob__form">
-                <input
-                  type="text"
-                  class="search-header-mob__inpt"
-                  placeholder="Поиск по сайту"
-                />
-              </form>
-            </div>
-          </li>
-          <li>
-            <a class="list__item" href="./factory.html"
-              ><img
-                class="icon-sidebar"
-                src="./assets/image/icon/tuman.png"
-                alt="Самоходные опрыскиватели Туман"
-              />Самоходные опрыскиватели Туман</a
-            >
-          </li>
-          <li>
-            <a class="list__item" href="./factory.html"
-              ><img
-                class="icon-sidebar"
-                src="./assets/image/icon/naer.png"
-                alt="Посевное оборудование НАИР"
-              />Посевное оборудование НАИР</a
-            >
-          </li>
-          <li>
-            <a class="list__item" href="./factory.html"
-              ><img
-                class="icon-sidebar"
-                src="./assets/image/icon/teejet.png"
-                alt="Навигация и автоподруливание TeeJet"
-              />Навигация и автоподруливание TeeJet</a
-            >
-          </li>
-          <li>
-            <a class="list__item" href="./factory.html"
-              ><img
-                class="icon-sidebar"
-                src="./assets/image/icon/header.png"
-                alt="Жатки"
-              />Жатки</a
-            >
-          </li>
-          <li>
-            <a class="list__item" href="./factory.html"
-              ><img
-                class="icon-sidebar"
-                src="./assets/image/icon/region.png"
-                alt="Регион"
-              />Регион</a
-            >
-          </li>
-          <li>
-            <a class="list__item" href="./factory.html"
-              ><img
-                class="icon-sidebar"
-                src="./assets/image/icon/elk.png"
-                alt="Что-нибудь еще"
-              />Что-нибудь еще</a
-            >
-          </li>
-        </ul>
-      </div>
 
+        <div class="menu__box">
+          <div class="top-header__logo logo">
+            <a href="./index.html"
+              ><img src="./assets/image/logo/logo.svg" alt="Логотип РИК-АГРО"
+            /></a>
+          </div>
+          <div class="search-header-mob">
+            <form class="search-header-mob__form">
+              <input
+                type="text"
+                class="search-header-mob__inpt"
+                placeholder="Поиск по сайту"
+              />
+            </form>
+          </div>
+
+          <div class="catalog">
+            <ul class="catalog__list list">
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="./assets/image/icon/tuman.png"
+                    alt="Каталог Туман"
+                  />
+                  <a class="list__link" href="#">
+                    Самоходные опрыскиватели Туман</a
+                  >
+                  <div data-path="one-mob" class="list__arrow">&#10217;</div>
+                </div>
+                <ul data-target="one-mob" class="list__dropdown">
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="#">Туман 1</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="#">Туман 2</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="#">Туман 3</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img src="./assets/image/icon/naer.png" alt="Каталог НАИР" />
+                  <a class="list__link" href="#"> Посевное оборудование НАИР</a>
+                  <div data-path="two-mob" class="list__arrow">&#10217;</div>
+                </div>
+                <ul data-target="two-mob" class="list__dropdown">
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="#"></a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="#"></a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="#"></a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="./assets/image/icon/teejet.png"
+                    alt="Каталог TeeJet"
+                  />
+                  <a class="list__link" href="#">
+                    Навигация и автоподруливание TeeJet</a
+                  >
+                  <div class="list__arrow">&#10217;</div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="./assets/image/icon/region.png"
+                    alt="Каталог Регион"
+                  />
+                  <a class="list__link" href="#"> Регион</a>
+                  <div class="list__arrow">&#10217;</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- Конец Мобильное меню -->
     </header>
+
     <main>
       <div class="main">
-        <!-- Предыдущий вариант навигации -->
-
-        <!-- <nav  >
-          <ul class="sidebar__catalog">
-            <li class="list__container">
-              <img
-                class="icon-sidebar"
-                src="./assets/image/icon/tuman.png"
-                alt="Каталог Туман"
-              />
-              <a class="list__item" href="./factory.html"
-                >Самоходные опрыскиватели Туман
-              </a>
-              <p class="list__arrow">&#10217;</p>
-              <ul class="list__dropdown-ul">
-                <li><a class="list__dropdown-li" href="#">Туман-1</a></li>
-                <li><a class="list__dropdown-li" href="#">Туман-2</a></li>
-                <li><a class="list__dropdown-li" href="#">Туман-3</a></li>
-              </ul>
-            </li>
-
-            <li class="list__container">
-              <img
-                class="icon-sidebar"
-                src="./assets/image/icon/naer.png"
-                alt="Каталог НАИР"
-              />
-              <a class="list__item" href="./factory.html"
-                >Посевное оборудование НАИР
-              </a>
-              <p class="list__arrow">&#10217;</p>
-            </li>
-            <li class="list__container">
-              <img
-                class="icon-sidebar"
-                src="./assets/image/icon/teejet.png"
-                alt="Каталог TeeJet"
-              />
-              <a class="list__item" href="./factory.html"
-                >Навигация и автоподруливание TeeJet
-              </a>
-              <p class="list__arrow">&#10217;</p>
-            </li>
-            <li class="list__container">
-              <img
-                class="icon-sidebar"
-                src="./assets/image/icon/header.png"
-                alt="Каталог Жатки"
-              />
-              <a class="list__item" href="./factory.html">Жатки </a>
-              <p class="list__arrow">&#10217;</p>
-            </li>
-            <li class="list__container">
-              <img
-                class="icon-sidebar"
-                src="./assets/image/icon/region.png"
-                alt="Каталог Регион"
-              />
-              <a class="list__item" href="./factory.html">Регион </a>
-              <p class="list__arrow">&#10217;</p>
-            </li>
-            <li class="list__container">
-              <img
-                class="icon-sidebar"
-                src="./assets/image/icon/elk.png"
-                alt="Каталог что-нибудь ещё"
-              />
-              <a class="list__item" href="./factory.html">Что-нибудь еще </a>
-              <p class="list__arrow">&#10217;</p>
-            </li>
-          </ul>
-        </nav> -->
-
-        <!-- Конец Предыдущий вариант навигации -->
         <!-- навигация -->
         <nav class="main__sidebar sidebar">
           <div class="catalog">
