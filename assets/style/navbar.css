@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.catalog {
+  margin: 30px 0;
+  border: 1px solid #dfdfdf;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
+
+.list__item {
+  position: relative;
+  padding: 0;
+  border-bottom: 1px solid #dfdfdf;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  list-style: none;
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}
+
+.list__item-box {
+  position: relative;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding: 5px 10px 5px 20px;
+}
+
+.list__item-box:hover {
+  background-color: #dfdfdf;
+}
+
+.list__link {
+  padding: 5px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #555D61;
+  text-decoration: none;
+}
+
+.list__link:hover {
+  text-decoration: underline;
+}
+
+.list__arrow {
+  margin-left: auto;
+  padding: 4px;
+  color: #555D61;
+  cursor: pointer;
+}
+
+.list__dropdown {
+  display: none;
+  width: 100%;
+  padding: 0;
+}
+
+.list__item-dropdown {
+  padding: 0;
+}
+
+.list__item-dropdown:first-child {
+  border-top: 1px solid #dfdfdf;
+}
+
+.dropdown-active {
+  display: block;
+}
+
+.list__arrow-active {
+  transform: rotate(90deg);
+}/*# sourceMappingURL=navbar.css.map */

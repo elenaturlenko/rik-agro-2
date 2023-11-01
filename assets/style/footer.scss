@@ -1,0 +1,174 @@
+//ФУТЕР
+
+//конструкция для перевода пикселей в rem
+$fz: 16px;
+
+@function rem($size) {
+  $remSize: $size / $fz;
+  @return $remSize * 1rem;
+}
+
+//шрифты
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$colorMain: #000;
+$colorCatalog: #555D61;
+$colorOrange: #f76500;
+$colorWhite: #fff;
+$colorGreyText: #858585;
+
+.footer {
+  margin-top: rem(30px);
+  padding: rem(40px) rem(20px) rem(40px) rem(48px);
+  color: $colorWhite;
+  background-color: $colorCatalog;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0px auto;
+    gap: 10px;
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__side-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 18px;
+
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    // margin-bottom: 35px;
+    white-space: nowrap;
+  }
+
+  &__social-title {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__info-big {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorWhite;
+    text-decoration: none;
+  }
+
+  &__info-big-hover:hover {
+    text-decoration: underline;
+  }
+
+  &__info-small {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 16px;
+    color: $colorGreyText;
+  }
+
+  &__main {
+    margin: 30px 0 30px 20px;
+  }
+
+
+  &__main-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-catalog {
+    width: 50%;
+  }
+
+  &__nav-title {
+    margin-bottom: 21px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__nav-title:hover {
+    text-decoration: underline;
+  }
+
+  &__nav-main {
+    display: flex;
+  }
+
+  &__nav-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 25px
+  }
+
+  &__nav-item {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: normal;
+    color: $colorWhite;
+    text-decoration: none;
+  }
+
+  &__nav-item:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 320px) and (max-width: 992px) {
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 900px;
+      padding-left: 20px;
+    }
+
+    &__logo {
+      display: flex;
+    }
+
+    &__main {
+      width: 100%;
+    }
+
+    &__side {
+      width: 100%;
+    }
+
+    &__main-container {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &__main-container {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .footer__side {
+    width: 27%;
+  }
+}
