@@ -95,6 +95,10 @@ header {
     text-decoration: none;
   }
 
+  &__phone:hover {
+    text-decoration: underline;
+  }
+
   &__button {
     height: 100%;
     padding: 10px 40px;
@@ -167,7 +171,7 @@ header {
 .dropdown {
   display: flex;
   justify-content: space-around;
-  margin-left: rem(5px);
+  margin-left: rem(10px);
   white-space: nowrap;
 }
 
@@ -179,6 +183,10 @@ header {
   color: $colorWhite;
   border: none;
   text-decoration: none;
+}
+
+.dropdown__btn:hover {
+  text-decoration: underline;
 }
 
 .dropdown__wrapper {
@@ -229,6 +237,12 @@ header {
     background: #f4f3f3;
     border-radius: 4px;
     border: none;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 8px;
+    right: -20px;
   }
 }
 
@@ -448,6 +462,7 @@ header {
   //конец гамбурер-меню
 
   .search-header-mob {
+    position: relative;
     max-width: 100%;
     padding: 10px 25px 10px 10px;
     border: solid #dfdfdf;
@@ -461,6 +476,12 @@ header {
       background: #f4f3f3;
       border-radius: 4px;
       border: none;
+    }
+
+    &__icon {
+      position: absolute;
+      top: 25px;
+      right: 35px;
     }
   }
 }
@@ -539,7 +560,7 @@ header {
 
 // конец блок каталог на странице каталог
 
-б .main__about-wrapper {
+.main__about-wrapper {
   margin: 0px 0px 20px 50px;
   padding: 10px 0px 0px 30px;
   background-color: $colorWhite;
@@ -834,8 +855,7 @@ header {
 
   &__container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1200px;
     margin: 0px auto;
     gap: 10px;
@@ -846,25 +866,19 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
   }
 
-  &__logo-item {
-    margin: 0px;
-    font-size: rem(40px);
-    letter-spacing: rem(4px);
-    text-align: center;
-    font-weight: 900;
-    color: $colorOrange;
-    text-decoration: none;
-    text-shadow: 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px,
-      0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px, 0 0 1px;
+  &__side-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 18px;
+
   }
 
   &__logo {
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
     white-space: nowrap;
   }
 
@@ -885,6 +899,10 @@ header {
     text-decoration: none;
   }
 
+  &__info-big-hover:hover {
+    text-decoration: underline;
+  }
+
   &__info-small {
     display: block;
     margin-bottom: 12px;
@@ -894,7 +912,7 @@ header {
   }
 
   &__main {
-    width: 73%;
+    // width: 73%;
     margin: 30px;
   }
 
@@ -920,6 +938,10 @@ header {
     line-height: 22px;
   }
 
+  &__nav-title:hover {
+    text-decoration: underline;
+  }
+
   &__nav-main {
     display: flex;
   }
@@ -940,6 +962,10 @@ header {
     text-decoration: none;
   }
 
+  &__nav-item:hover {
+    text-decoration: underline;
+  }
+
   @media (min-width: 320px) and (max-width: 992px) {
     &__container {
       flex-direction: column;
@@ -958,6 +984,10 @@ header {
 
     &__side {
       width: 100%;
+    }
+
+    &__main-container {
+      justify-content: flex-start;
     }
   }
 
