@@ -25,10 +25,10 @@ $colorGreyText: #858585;
 
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 1200px;
     margin: 0px auto;
-    gap: 10px;
+    gap: rem(100px);
   }
 
   &__side {
@@ -138,6 +138,7 @@ $colorGreyText: #858585;
     &__container {
       flex-direction: column;
       justify-content: space-between;
+      gap: rem(10px);
       max-width: 900px;
       padding-left: 20px;
     }

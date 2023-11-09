@@ -7,10 +7,10 @@
 }
 .footer__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1200px;
   margin: 0px auto;
-  gap: 10px;
+  gap: 6.25rem;
 }
 .footer__side {
   display: flex;
@@ -99,6 +99,7 @@
   .footer__container {
     flex-direction: column;
     justify-content: space-between;
+    gap: 0.625rem;
     max-width: 900px;
     padding-left: 20px;
   }

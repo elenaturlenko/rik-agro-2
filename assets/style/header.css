@@ -33,6 +33,7 @@ header {
   font-weight: 800;
   color: #fff;
   text-decoration: none;
+  letter-spacing: 0.09375rem;
 }
 .contact-header__phone:hover {
   text-decoration: underline;
@@ -50,8 +51,8 @@ header {
   text-decoration: none;
 }
 .contact-header__button:hover {
-  color: #f76500;
-  background-color: #dfdfdf;
+  background-color: #555D61;
+  border: 1px solid #f76500;
 }
 
 .body-header__container {
@@ -80,8 +81,9 @@ header {
   text-decoration: none;
 }
 .catalog-header__btn:hover {
-  color: #f76500;
-  background-color: #dfdfdf;
+  background-color: #555D61;
+  border: 1px solid #f76500;
+  cursor: pointer;
 }
 
 .search-header {
@@ -111,6 +113,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin-left: 0.625rem;
+  letter-spacing: 0.09375rem;
   white-space: nowrap;
 }
 

@@ -56,6 +56,7 @@ header {
     font-weight: 800;
     color: $colorWhite;
     text-decoration: none;
+    letter-spacing: rem(1.5px);
   }
 
   &__phone:hover {
@@ -76,8 +77,8 @@ header {
   }
 
   &__button:hover {
-    color: $colorOrange;
-    background-color: #dfdfdf;
+    background-color: $colorCatalog;
+    border: 1px solid $colorOrange;
   }
 }
 
@@ -113,8 +114,9 @@ header {
   }
 
   &__btn:hover {
-    color: $colorOrange;
-    background-color: #dfdfdf;
+    background-color: $colorCatalog;
+    border: 1px solid $colorOrange;
+    cursor: pointer;
   }
 }
 
@@ -148,6 +150,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin-left: rem(10px);
+  letter-spacing: rem(1.5px);
   white-space: nowrap;
 }
 
