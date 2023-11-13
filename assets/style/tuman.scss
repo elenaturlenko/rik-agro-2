@@ -192,6 +192,35 @@ $colorGreyText: #858585;
   text-decoration: none;
 }
 
+// кнопки на основной странице каталога наир
+.bottom-block__right_naer {
+  margin: 0 30px;
+}
+
+.bottom-block__right_btn-naer {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 20px 30px;
+  font-size: rem(16px);
+  font-weight: 800;
+  letter-spacing: rem(2px);
+  color: $colorWhite;
+  background-color: $colorOrange;
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.bottom-block__right_btn-naer:hover {
+  background-color: $colorCatalog;
+  border: 1px solid $colorOrange;
+  cursor: pointer;
+}
+
+.bottom-block__right_btn-naer a {
+  color: $colorWhite;
+  text-decoration: none;
+}
 
 // конец нижняя часть блока
 
@@ -225,17 +254,17 @@ $colorGreyText: #858585;
   }
 
   // кнопки в правой части нижнего блока
-  .bottom-block__right {
+  .bottom-block__right,
+  .bottom-block__right_naer {
     width: 100%;
     padding: 0 30px;
   }
 
   // кнопки в правой части нижнего блока
   .bottom-block__right_btn {
+    padding: 20px 30px;
     font-size: rem(20px);
   }
 }
-
-@media (min-width: 320px) and (max-width: 767px) {}
 
 // конец блок продукции
