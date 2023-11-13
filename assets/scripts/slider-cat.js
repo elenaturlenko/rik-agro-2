@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".slider-cat").slick({
     arrows: false,
-    slidesToShow: 4,
+    slidesToShow: 3,
     infinite: false,
-    slidesToScroll: 4,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1280,

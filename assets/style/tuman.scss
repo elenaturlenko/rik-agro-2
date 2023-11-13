@@ -24,18 +24,19 @@ $colorGreyText: #858585;
 // }
 
 .prodiction-block {
-  margin: 80px 40px 0 40px;
+  margin: 0 0 0 40px;
 }
 
 .prodiction-block__title {
-  margin-bottom: 80px;
+  margin: 30px 0;
 }
 
 .prodiction-block__title h1 {
   color: $colorMain;
   font-weight: 700;
-  font-size: rem(40px);
+  font-size: rem(28px);
   letter-spacing: 1px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -79,7 +80,7 @@ $colorGreyText: #858585;
   padding: 0;
   margin: 0;
   font-weight: 700;
-  font-size: rem(80px);
+  font-size: rem(60px);
   letter-spacing: rem(3px);
   color: $colorWhite;
   text-transform: uppercase;
@@ -90,7 +91,7 @@ $colorGreyText: #858585;
 }
 
 .content__text p {
-  font-size: rem(24px);
+  font-size: rem(20px);
   font-weight: 700;
   letter-spacing: rem(4px);
   color: $colorWhite;
@@ -104,7 +105,7 @@ $colorGreyText: #858585;
 
 .content ul li {
   margin-bottom: rem(12px);
-  font-size: rem(20px);
+  font-size: rem(16px);
   font-weight: 700;
   letter-spacing: rem(2px);
   color: $colorWhite;
@@ -119,7 +120,7 @@ $colorGreyText: #858585;
 }
 
 .production__text p {
-  font-size: rem(20px);
+  font-size: rem(16px);
   font-weight: 700;
   letter-spacing: rem(2px);
 }
@@ -130,7 +131,7 @@ $colorGreyText: #858585;
 }
 
 .production__subtitle p {
-  font-size: rem(24px);
+  font-size: rem(20px);
   font-weight: 700;
   letter-spacing: rem(4px);
 }
@@ -153,7 +154,7 @@ $colorGreyText: #858585;
 }
 
 .product-text {
-  font-size: rem(18px);
+  font-size: rem(16px);
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -162,7 +163,6 @@ $colorGreyText: #858585;
 .bottom-block__right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   width: 20%;
   padding-right: 32px;
 }
@@ -170,7 +170,7 @@ $colorGreyText: #858585;
 .bottom-block__right_btn {
   width: 100%;
   margin-bottom: 15px;
-  padding: 20px 40px;
+  padding: 10px 30px;
   font-size: rem(16px);
   font-weight: 800;
   letter-spacing: rem(2px);

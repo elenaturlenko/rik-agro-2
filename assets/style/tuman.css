@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .prodiction-block {
-  margin: 80px 40px 0 40px;
+  margin: 0 0 0 40px;
 }
 
 .prodiction-block__title {
-  margin-bottom: 80px;
+  margin: 30px 0;
 }
 
 .prodiction-block__title h1 {
   color: #000;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   letter-spacing: 1px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -53,7 +54,7 @@
   padding: 0;
   margin: 0;
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 3.75rem;
   letter-spacing: 0.1875rem;
   color: #fff;
   text-transform: uppercase;
@@ -64,7 +65,7 @@
 }
 
 .content__text p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.25rem;
   color: #fff;
@@ -78,7 +79,7 @@
 
 .content ul li {
   margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.125rem;
   color: #fff;
@@ -90,7 +91,7 @@
 }
 
 .production__text p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.125rem;
 }
@@ -101,7 +102,7 @@
 }
 
 .production__subtitle p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.25rem;
 }
@@ -120,7 +121,7 @@
 }
 
 .product-text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -128,7 +129,6 @@
 .bottom-block__right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   width: 20%;
   padding-right: 32px;
 }
@@ -136,7 +136,7 @@
 .bottom-block__right_btn {
   width: 100%;
   margin-bottom: 15px;
-  padding: 20px 40px;
+  padding: 10px 30px;
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.125rem;
