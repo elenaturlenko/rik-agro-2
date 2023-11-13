@@ -42,8 +42,11 @@ $fz: 16px;
   @return $remSize * 1rem;
 }
 
-//шрифты
+// //шрифты
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//шрифты
+// @import url('https://fonts.googleapis.com/css2?family=Gupter&family=Tinos&display=swap');
 
 $colorMain: #000;
 $colorCatalog: #555D61;
@@ -55,6 +58,7 @@ $colorGreyText: #858585;
 body {
   margin: 0;
   font-family: 'Roboto';
+  // font-family: 'PT Serif';
   background-color: #f6f6f6;
 }
 
