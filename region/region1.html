@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style/normalise.css" />
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <title>Каталог ООО «Регион»</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top top-header">
+        <div class="top-header__container">
+          <div class="top-header__logo">
+            <a href="../index.html"
+              ><img src="../assets/image/logo/logo.svg" alt="Логотип РИК-АГРО"
+            /></a>
+          </div>
+          <div class="top-header__contact contact-header">
+            <p>
+              <a class="contact-header__phone" href="tel:+73472664112"
+                >+7 (347) 266-41-12</a
+              >
+            </p>
+            <a
+              class="contact-header__button"
+              href="https://api.whatsapp.com/send/?phone=79378564112&text&type=phone_number&app_absent=0"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="header__body body-header">
+        <div class="body-header__container">
+          <div class="body-header__catalog catalog-header">
+            <button
+              onclick="location.href = '../catalog.html';"
+              class="catalog-header__btn"
+            >
+              Каталог
+            </button>
+          </div>
+          <div class="body-header__search search-header">
+            <form class="search-header__form">
+              <input
+                type="text"
+                class="search-header__inpt"
+                placeholder="Поиск по сайту"
+              />
+              <img
+                class="search-header__icon"
+                src="../assets/image/icon/search.svg"
+                alt="Поиск"
+              />
+            </form>
+          </div>
+          <div class="header__dropdown dropdown">
+            <div class="dropdown__wrapper">
+              <a href="../factory.html" class="dropdown__btn">О компании</a>
+            </div>
+            <div class="dropdown__wrapper">
+              <a href="../factory.html" class="dropdown__btn">Вакансии</a>
+            </div>
+            <div class="dropdown__wrapper">
+              <a href="../factory.html" class="dropdown__btn">Новости</a>
+            </div>
+            <div class="dropdown__wrapper">
+              <a href="../contacts.html" class="dropdown__btn">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Мобильное меню -->
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <div class="menu__box">
+          <div class="top-header__logo logo">
+            <a href="../index.html"
+              ><img src="../assets/image/logo/logo.svg" alt="Логотип РИК-АГРО"
+            /></a>
+          </div>
+          <div class="search-header-mob">
+            <form class="search-header-mob__form">
+              <input
+                type="text"
+                class="search-header-mob__inpt"
+                placeholder="Поиск по сайту"
+              />
+              <img
+                class="search-header-mob__icon"
+                src="../assets/image/icon/search.svg"
+                alt="Поиск"
+              />
+            </form>
+          </div>
+          <div class="catalog">
+            <ul class="catalog__list list">
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="../assets/image/icon/tuman.png"
+                    alt="Каталог Туман"
+                  />
+                  <a class="list__link" href="../tuman.html">
+                    Самоходные опрыскиватели Туман</a
+                  >
+                  <div data-path="one-mob" class="list__arrow">&#10217;</div>
+                </div>
+                <ul data-target="one-mob" class="list__dropdown">
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../tuman1.html">Туман 1</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../tuman2.html">Туман 2</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../tuman3.html">Туман 3</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img src="../assets/image/icon/naer.png" alt="Каталог НАИР" />
+                  <a class="list__link" href="../naer.html">
+                    Посевное оборудование НАИР</a
+                  >
+                  <div data-path="two-mob" class="list__arrow">&#10217;</div>
+                </div>
+                <ul data-target="two-mob" class="list__dropdown">
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer651.html">ДОН 651</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer637.html">ДОН 637</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer125.html">ДОН 125</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer114.html">ДОН 114</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="../assets/image/icon/teejet.png"
+                    alt="Каталог TeeJet"
+                  />
+                  <a class="list__link" href="#">
+                    Навигация и автоподруливание TeeJet</a
+                  >
+                  <div class="list__arrow">&#10217;</div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="../assets/image/icon/region.png"
+                    alt="Каталог Регион"
+                  />
+                  <a class="list__link" href="#"> Регион</a>
+                  <div class="list__arrow">&#10217;</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Конец Мобильное меню -->
+    </header>
+    <main>
+      <div class="main">
+        <!-- навигация -->
+        <nav class="main__sidebar sidebar">
+          <div class="catalog">
+            <ul class="catalog__list list">
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="../assets/image/icon/tuman.png"
+                    alt="Каталог Туман"
+                  />
+                  <a class="list__link" href="../tuman.html">
+                    Самоходные опрыскиватели Туман</a
+                  >
+                  <div data-path="one" class="list__arrow">&#10217;</div>
+                </div>
+                <ul data-target="one" class="list__dropdown">
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../tuman1.html">Туман 1</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../tuman2.html">Туман 2</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../tuman3.html">Туман 3</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img src="../assets/image/icon/naer.png" alt="Каталог НАИР" />
+                  <a class="list__link" href="./naer.html">
+                    Посевное оборудование НАИР</a
+                  >
+                  <div data-path="two" class="list__arrow">&#10217;</div>
+                </div>
+                <ul data-target="two" class="list__dropdown">
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer651.html">ДОН 651</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer637.html">ДОН 637</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer125.html">ДОН 125</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="../naer114.html">ДОН 114</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="../assets/image/icon/teejet.png"
+                    alt="Каталог TeeJet"
+                  />
+                  <a class="list__link" href="#">
+                    Навигация и автоподруливание TeeJet</a
+                  >
+                  <div class="list__arrow">&#10217;</div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="list__item-box">
+                  <img
+                    src="../assets/image/icon/region.png"
+                    alt="Каталог Регион"
+                  />
+                  <a class="list__link" href="./region.html"> Регион</a>
+                  <div data-path="four" class="list__arrow">&#10217;</div>
+                </div>
+                <ul data-target="four" class="list__dropdown">
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="">Пластиковые емкости</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href=""
+                        >Транспортные емкости типа "Кассета"</a
+                      >
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href=""
+                        >Мобильные растворные узлы</a
+                      >
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href=""
+                        >Стационарные растворные узлы</a
+                      >
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="">Системы хранения</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href=""
+                        >Мобильные пожарные установки</a
+                      >
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href=""
+                        >Емкости утепленные с подогревом</a
+                      >
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="">Стационарные емкости</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href=""
+                        >Дизенфекционные установки</a
+                      >
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="">Заправочный пост</a>
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href=""
+                        >Мобильные растворные узлы для агродронов</a
+                      >
+                    </div>
+                  </li>
+                  <li class="list__item list__item-dropdown">
+                    <div class="list__item-box">
+                      <a class="list__link" href="">Модуль подогрева</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- конец навигация -->
+        <div class="main__body body-container">
+          <article class="prodiction-block">
+            <div class="prodiction-block__title">
+              <h1>Пластиковые емкости</h1>
+            </div>
+            <div class="production">
+              <div class="production__img img-production">
+                <div class="img-production__img">
+                  <img
+                    src="../assets/image/image/page/region/catalog/1.png"
+                    alt="Пластиковые емкости"
+                  />
+                </div>
+              </div>
+              <div class="production__bottom bottom-block">
+                <div class="bottom-block__right_naer">
+                  <div>
+                    <button class="bottom-block__right_btn-naer">
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=79378564112&text&type=phone_number&app_absent=0"
+                        >Запросить прайс</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="production__text">
+                <p>
+                  Предназначены для стационарного хранения воды и любых
+                  растворов согласно таблице химостойкости.
+                </p>
+                <p>
+                  В производстве используется первичный полиэтилен низкого
+                  давления классический, а также серии Super более устойчивый к
+                  агрессивной среде, механическим повреждениям, УФ-лучам и
+                  высоким температурам.
+                </p>
+                <p>
+                  Применение емкостей универсальных для хранения, перекачки:
+                </p>
+                <ul>
+                  <li>
+                    пищевых продуктов (вода, масло растительное, вино,
+                    молоко...);
+                  </li>
+                  <li>
+                    химии, нефтехимии, щелочей, кислот, реагентов (агрессивных
+                    жидкостей);
+                  </li>
+                  <li>нефтепродуктов (дизель, ТПБС, ТПБТ;)</li>
+                  <li>
+                    организация заправочных постов на авто предприятиях; на
+                    местах проведения строительных, ремонтных работ, для
+                    заправки спецтехники;
+                  </li>
+                  <li>
+                    с/х растворов (для опрыскивателей, протравливателей...);
+                  </li>
+                  <li>
+                    технологических рабочих растворов (приготовление,
+                    дозирование...);
+                  </li>
+                  <li>воды, жидкостей (запасы тех.воды, растворов...)</li>
+                </ul>
+                <p>
+                  Возможна комплектация сливной арматурой, а также постаментом
+                  под емкость.
+                </p>
+              </div>
+              <div class="production__subtitle_region">
+                <p>Модификации:</p>
+                <div class="production__img img-production">
+                  <div class="img-production__img">
+                    <img
+                      src="../assets/image/image/page/region/pages/1-1.png"
+                      alt="Пластиковые емкости"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__side">
+          <div class="footer__logo">
+            <a class="footer__logo-item" href="./index.html"
+              ><img src="../assets/image/logo/logo.svg" alt="Логотип РИК-АГРО"
+            /></a>
+          </div>
+          <div class="footer__side-block">
+            <div class="footer__social">
+              <p class="footer__social-title">Мы в социальных сетях:</p>
+              <a
+                href="https://www.youtube.com/channel/UCWeOQueBeG_vGwbNGHqj0iQ?view_as=subscriber"
+                ><img
+                  src="../assets/image/icon/youtube.png"
+                  alt="Иконка тумана"
+              /></a>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info-big">с. Нижегородка</p>
+              <p class="footer__info-small">улица Чапаева 37/1</p>
+              <p>
+                <a
+                  class="footer__info-big footer__info-big-hover"
+                  href="tel:+73472664112"
+                  >+7 (347) 266-41-12</a
+                >
+              </p>
+              <p class="footer__info-small">
+                Режим работы: Пн-Пт с 8:00 до 17:00
+              </p>
+              <p class="footer__info-big">2664112@mail.ru</p>
+              <p class="footer__info-small">ИНН/КПП 0245956354/024501001</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__main">
+          <div class="footer__main-container">
+            <div class="footer__nav footer__nav-catalog">
+              <div class="footer__nav-title">Каталог товаров</div>
+              <div class="footer__nav-main">
+                <div class="footer__nav-box">
+                  <a class="footer__nav-item" href="../factory.html"
+                    >Самоходные опрыскиватели Туман</a
+                  >
+                  <a class="footer__nav-item" href="../factory.html"
+                    >Посевное оборудование НАИР</a
+                  >
+                  <a class="footer__nav-item" href="../factory.html"
+                    >Навигация и автоподруливание TeeJet</a
+                  >
+                  <a class="footer__nav-item" href="../factory.html">Регион</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__nav">
+              <div class="footer__nav-title">
+                О компании<a
+                  class="footer__nav-item"
+                  href="../contacts.html"
+                ></a>
+              </div>
+              <div class="footer__nav-title">
+                Вакансии <a class="footer__nav-item" href="../factory.html"></a>
+              </div>
+              <div class="footer__nav-title">
+                Новости <a class="footer__nav-item" href="../factory.html"></a>
+              </div>
+              <div class="footer__nav-title">
+                Контакты <a class="footer__nav-item" href="../factory.html"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/scripts/script.js"></script>
+    <!-- Подключаем jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Подключаем слайдер Slick -->
+    <script src="../assets/scripts/slick.min.js"></script>
+    <script src="../assets/scripts/slider-cat.js"></script>
+  </body>
+</html>

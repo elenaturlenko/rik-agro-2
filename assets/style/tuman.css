@@ -15,7 +15,7 @@
 }
 
 .production {
-  margin-bottom: 7.5rem;
+  margin-bottom: 1.875rem;
   background-color: #fff;
 }
 
@@ -206,4 +206,10 @@
     padding: 20px 30px;
     font-size: 1.25rem;
   }
+}
+.production__text ul li {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  list-style-type: circle;
 }/*# sourceMappingURL=tuman.css.map */

@@ -1,4 +1,4 @@
-// страница Туман общая
+// страница Туман, НАИР общая, регион отдельные
 
 //конструкция для перевода пикселей в rem
 $fz: 16px;
@@ -33,7 +33,7 @@ $colorGreyText: #858585;
 // блок продукции
 
 .production {
-  margin-bottom: rem(120px);
+  margin-bottom: rem(30px);
   background-color: $colorWhite;
 }
 
@@ -122,7 +122,6 @@ $colorGreyText: #858585;
 .production__subtitle p {
   font-size: rem(20px);
   font-weight: 700;
-  // letter-spacing: rem(4px);
 }
 
 // конец текста в блоке
@@ -257,3 +256,12 @@ $colorGreyText: #858585;
 }
 
 // конец блок продукции
+
+// отдельные страницы регион
+// список в отдельной странице
+.production__text ul li {
+  margin-top: 10px;
+  font-size: rem(16px);
+  font-weight: 700;
+  list-style-type: circle;
+}

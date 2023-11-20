@@ -213,6 +213,7 @@ header {
     text-align: center;
     background-color: #fff;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    overflow: auto;
   }
   .menu__item-mob {
     position: relative;
