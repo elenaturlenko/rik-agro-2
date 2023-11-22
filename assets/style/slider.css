@@ -134,5 +134,7 @@
 }
 
 .product-item:hover .button-slider {
-  background: #858585;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #f76500;
 }/*# sourceMappingURL=slider.css.map */

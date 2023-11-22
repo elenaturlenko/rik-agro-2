@@ -152,5 +152,7 @@ $colorGreyText: #858585;
 }
 
 .product-item:hover .button-slider {
-  background: $colorGreyText;
+  color: $colorMain;
+  background-color: $colorWhite;
+  border: 1px solid $colorOrange;
 }
