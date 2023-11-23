@@ -156,7 +156,7 @@ $colorGreyText: #858585;
 }
 
 .bottom-block__right_btn {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   margin-bottom: 15px;
   padding: 10px 30px;
@@ -184,8 +184,8 @@ $colorGreyText: #858585;
 }
 
 .bottom-block__right_btn-naer {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  max-width: 100%;
   margin-bottom: 15px;
   padding: 20px 30px;
   font-size: rem(16px);
