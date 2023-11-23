@@ -127,7 +127,8 @@
 }
 
 .bottom-block__right_btn {
-  width: 100%;
+  display: inline-block;
+  max-width: 100%;
   margin-bottom: 15px;
   padding: 10px 30px;
   font-size: 1rem;
@@ -137,17 +138,14 @@
   border: 0;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
 }
 
 .bottom-block__right_btn:hover {
-  background-color: #555D61;
+  color: #000;
+  background-color: #fff;
   border: 1px solid #f76500;
   cursor: pointer;
-}
-
-.bottom-block__right_btn a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .bottom-block__right_naer {
@@ -155,6 +153,7 @@
 }
 
 .bottom-block__right_btn-naer {
+  display: inline-block;
   width: 100%;
   margin-bottom: 15px;
   padding: 20px 30px;
@@ -165,10 +164,12 @@
   border: 0;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
 }
 
 .bottom-block__right_btn-naer:hover {
-  background-color: #555D61;
+  color: #000;
+  background-color: #fff;
   border: 1px solid #f76500;
   cursor: pointer;
 }

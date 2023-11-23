@@ -156,7 +156,8 @@ $colorGreyText: #858585;
 }
 
 .bottom-block__right_btn {
-  width: 100%;
+  display: inline-block;
+  max-width: 100%;
   margin-bottom: 15px;
   padding: 10px 30px;
   font-size: rem(16px);
@@ -167,17 +168,14 @@ $colorGreyText: #858585;
   border: 0;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
 }
 
 .bottom-block__right_btn:hover {
-  background-color: $colorCatalog;
+  color: $colorMain;
+  background-color: $colorWhite;
   border: 1px solid $colorOrange;
   cursor: pointer;
-}
-
-.bottom-block__right_btn a {
-  color: $colorWhite;
-  text-decoration: none;
 }
 
 // кнопки на основной странице каталога наир
@@ -186,6 +184,7 @@ $colorGreyText: #858585;
 }
 
 .bottom-block__right_btn-naer {
+  display: inline-block;
   width: 100%;
   margin-bottom: 15px;
   padding: 20px 30px;
@@ -197,10 +196,12 @@ $colorGreyText: #858585;
   border: 0;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
 }
 
 .bottom-block__right_btn-naer:hover {
-  background-color: $colorCatalog;
+  color: $colorMain;
+  background-color: $colorWhite;
   border: 1px solid $colorOrange;
   cursor: pointer;
 }
