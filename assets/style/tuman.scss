@@ -219,12 +219,16 @@ $colorGreyText: #858585;
   // текст на изображении
   .img-production__content {
     position: static;
-    padding: 32px;
+    padding: 32px 32px 0 32px;
   }
 
   .img-production__content p,
   .content ul li {
     color: $colorMain;
+  }
+
+  .content__title p {
+    font-size: rem(28px);
   }
 
   // нижняя часть блока
