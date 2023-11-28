@@ -136,6 +136,7 @@ $colorGreyText: #858585;
   }
 
   @media (min-width: 320px) and (max-width: 992px) {
+
     &__container {
       flex-direction: column;
       justify-content: space-between;
@@ -172,5 +173,11 @@ $colorGreyText: #858585;
 @media (min-width: 1200px) and (max-width: 1400px) {
   .footer__side {
     width: 27%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .footer {
+    padding: rem(40px) rem(20px) rem(40px) rem(10px);
   }
 }
