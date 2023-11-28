@@ -216,6 +216,11 @@ $colorGreyText: #858585;
 // мобильная версия блок продукции
 @media (min-width: 320px) and (max-width: 992px) {
 
+  .prodiction-block {
+    margin: 0 0 0 20px;
+  }
+
+
   // текст на изображении
   .img-production__content {
     position: static;

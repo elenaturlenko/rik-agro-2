@@ -10,12 +10,33 @@
   font-weight: 700;
 }
 
+.production__title_vacancy {
+  padding: 32px;
+}
+
+.production__title_vacancy p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .production__subtitle_region {
   margin-bottom: 2rem;
   padding: 0 32px 32px 32px;
 }
 
 .production__subtitle_region p {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.production__subtitle_vacancy {
+  margin-bottom: 2rem;
+  padding: 0 32px 32px 32px;
+}
+
+.production__subtitle_vacancy p {
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -63,4 +84,11 @@
 
 .region-catalog__block_text a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+  .production__subtitle_vacancy {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=region.css.map */
