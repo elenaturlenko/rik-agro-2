@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .footer {
   margin-top: 1.875rem;
-  padding: 2.5rem 1.25rem 2.5rem 3rem;
+  padding: 2.5rem 1.25rem 2.5rem 0.625rem;
   font-family: "Roboto";
   color: #fff;
   background-color: #555D61;
@@ -127,10 +127,5 @@
 @media (min-width: 1200px) and (max-width: 1400px) {
   .footer__side {
     width: 27%;
-  }
-}
-@media (min-width: 320px) and (max-width: 992px) {
-  .footer {
-    padding: 2.5rem 1.25rem 2.5rem 0.625rem;
   }
 }/*# sourceMappingURL=footer.css.map */
